@@ -1,0 +1,45 @@
+.footer {
+  padding: 20px;
+  background-color: var(--color-header-bg);
+  text-align: center;
+  font-size: 14px;
+  color: var(--color-header-text);
+  /* border-top: 1px solid #ddd; */
+}
+
+.wrap {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.footer a {
+  color: var(--color-primary-soft-border);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+/* custom */
+.nameD {
+  color: var(--color-primary-soft-border) !important;
+  font-weight: 600;
+}
+
+.github {
+  color: var(--color-primary-soft-border) !important;
+  text-decoration: none !important;
+}
+
+.nameD,
+.github {
+  display: inline-block;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+}

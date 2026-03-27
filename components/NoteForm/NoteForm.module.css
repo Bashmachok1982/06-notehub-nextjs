@@ -1,0 +1,73 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--color-text);
+}
+
+.input,
+.textarea,
+.select {
+  margin-top: 4px;
+  padding: 8px 12px;
+  font-size: 14px;
+  border: 1px solid var(--color-border);
+  background-color: var(--color-surface);
+  color: var(--color-text);
+  border-radius: 4px;
+  resize: none;
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+.submitButton {
+  padding: 8px 16px;
+  font-size: 16px;
+  background-color: var(--color-primary);
+  color: var(--color-header-text);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.submitButton:hover {
+  background-color: var(--color-primary-hover);
+}
+
+.submitButton:disabled {
+  background-color: var(--color-text-subtle);
+  cursor: not-allowed;
+}
+
+.cancelButton {
+  padding: 8px 16px;
+  font-size: 16px;
+  background-color: var(--color-surface);
+  color: var(--color-text);
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.cancelButton:hover {
+  background-color: var(--color-surface-muted);
+}
+
+.error {
+  color: var(--color-danger);
+  font-size: 12px;
+  margin-top: 4px;
+}
